@@ -47,13 +47,12 @@ app.use("/api/activity", require("./routes/activity"));
 app.use("/api/doctors", require("./routes/doctors"));
 app.use("/api/notifications", require("./routes/notifications"));
 app.use("/api/settings", require("./routes/userSettings"));
-app.use("/api/activity", require("./routes/activity"));
 
 
 
 // ===== SERVER START =====
 const PORT = process.env.PORT || 5000;
 
-app.listen(PORT, () => {
+server.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
